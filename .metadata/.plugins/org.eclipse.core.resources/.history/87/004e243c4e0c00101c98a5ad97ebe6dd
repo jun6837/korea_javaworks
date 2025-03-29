@@ -1,0 +1,32 @@
+package choice;
+
+import jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput;
+
+public class IfElseEx3 {
+
+	public static void main(String[] args) {
+		// 숫자 비교(일치)
+		int num1 = 100;
+		int num2 = 100;
+		
+		if (num1 == num2) {
+			System.out.println("두 수가 일치합니다.");
+		}else {
+			System.out.println("두 수가 일치하지 않습니다.");
+		}
+		
+		// 문자 비교(일치)
+		String str1 = "apple";
+		String str2 = "banana";
+		
+		if (str1.equals(str2)) {
+			System.out.println("두 단어가 일치합니다.");
+		}else {
+			System.out.println("두 단어가 일치하지 않습니다.");
+			
+		}
+		
+
+	}
+
+}
