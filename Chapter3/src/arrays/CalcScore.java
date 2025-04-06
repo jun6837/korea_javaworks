@@ -8,7 +8,7 @@ public class CalcScore {
 		// 성적 처리 프로그램
 		boolean run = true; // 프로그램 시작과 종료 - 스위치 변수
 		int studentNum = 0; // 학생수    
-		int scores[] = null;// 점수를 저장할 배열
+		int scores[] = null;// 점수를 저장할 배열(객체)
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -26,15 +26,38 @@ public class CalcScore {
 			    scores = new int[studentNum];
 			    break;
 			case 2:
-				for(int i=0; i<scores.length;i++) {
+				if(scores != null) { //배열이 null 이 아닌 경우에만 수행한다.
+				for(int i=0; i<scores.length; i++) {
 					System.out.print("scores["+i+"]"+">");
 					scores[i] = sc.nextInt(); // 점수입력
 					}
+				}
 				break;
 			case 3:
-				for(int i=0; i<scores.length;i++) {
+				if(scores != null) { //배열이 null 이 아닌 경우에만 수행한다.
+				for(int i=0; i<scores.length; i++) {
 					System.out.println("scores["+i+"]"+" = " + scores[i]);
 										}
+				}
+				break;
+			case 4:
+				if(scores != null) { //배열이 null 이 아닌 경우에만 수행한다.
+				int sum =0;
+				double avg;
+				int max = scores[0];
+				for(int i=0; i<scores.length; i++) {
+					sum += scores[i];
+					
+					if(scores[i] > max) {
+						max = scores[i];
+					}
+									
+										}
+				avg = (double) sum / scores.length;
+				System.out.println("평균 점수 : " + avg);
+				System.out.println("최고 점수 : " + max);
+				}				
+				
 				break;				
 			case 5:
 				System.out.println("프로그램을 종료합니다.");
@@ -45,11 +68,7 @@ public class CalcScore {
 				break;
 			}
 			
-		}
-		
-		
-		
-		
+		}		
 sc.close();
 	}
    
