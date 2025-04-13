@@ -13,7 +13,7 @@ public class Person {
 	//버스를 타는 메서드
 	
 	public void takeBus(Bus bus, int fee) {
-		bus.take(fee);
+		bus.take(fee);		
 		this.money -= fee; //this.money = this.money - fee
 	}
 	
