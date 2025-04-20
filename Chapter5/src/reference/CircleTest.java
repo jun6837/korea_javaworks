@@ -1,5 +1,7 @@
 package reference;
 
+import reference.circle.Circle;
+
 public class CircleTest {
 
 	public static void main(String[] args) {

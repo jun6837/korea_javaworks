@@ -1,4 +1,4 @@
-package reference;
+package reference.circle;
 
 public class Circle {
 	
