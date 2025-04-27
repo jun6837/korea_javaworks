@@ -1,6 +1,6 @@
 package objects;
 
-public class Book {
+public class Book{
 	int bookNumber;
 	String bookTitle;
 	
@@ -8,6 +8,8 @@ public class Book {
 		this.bookNumber = bookNumber;
 		this.bookTitle = bookTitle;
 	}
+
+
 
 	//객체 정보를 문자열로 출력
 	@Override

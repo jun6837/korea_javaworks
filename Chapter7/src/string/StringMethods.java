@@ -31,8 +31,21 @@ public class StringMethods {
         String secondNum = jumin.substring(7);
         System.out.println("주민번호 뒷자리: " + secondNum);
         
+        //indexOf(문자열) - 문자열이 시작되는 (첫)위치를 리턴하는 메서드
+        //못찾으면 -1이 리턴됨
         
-        
+        String subject = "자바 프로그래밍 입문";
+        int location1 = subject.indexOf("프로그래밍");
+        System.out.println(location1);
+        int location2 = subject.indexOf("코딩");
+        System.out.println(location2); //-1
+        //문자열 검색
+        if(subject.indexOf("자바") != -1) {
+        	System.out.println("자바 관련 서적");
+        }else {
+        	System.out.println("자바 비관련 서적");
+        }
+              
         
 	}
 
