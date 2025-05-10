@@ -15,31 +15,33 @@ public class BankMain {
 			System.out.println("=============================================");
 			System.out.print("선택> ");
 			
-			int selectNum = Integer.parseInt(scan.nextLine());
-			
-			switch(selectNum) {
-			case 1:
-				createAccount();
-				break;
-			case 2:
-				accountList();
-				break;
-			case 3:
-				deposit();
-				break;
-			case 4:
-				withdraw();
-				break;
-			case 5:
-				System.out.println("프로그램을 종료합니다.");
-				sw = false;
-				break;
-			default:
-				System.out.println("다시 입력하세요.");
-				break;
-			
+			try {
+				int selectNum = Integer.parseInt(scan.nextLine());
+				
+				switch(selectNum) {
+				case 1:
+					createAccount();
+					break;
+				case 2:
+					accountList();
+					break;
+				case 3:
+					deposit();
+					break;
+				case 4:
+					withdraw();
+					break;
+				case 5:
+					System.out.println("프로그램을 종료합니다.");
+					sw = false;
+					break;
+				default:
+					System.out.println("다시 입력하세요.");
+					break;
+			    	}
+			}catch(NumberFormatException e) {
+				System.out.println("잘못된 입력입니다.");
 			}
-			
 		}
 	scan.close();
 	}
@@ -68,16 +70,22 @@ public class BankMain {
 		System.out.println("====================================");
 		System.out.print("계좌번호: ");
 		String ano = scan.nextLine();
-		System.out.print("출금액: ");
-		int amount = Integer.parseInt(scan.nextLine());
+		
 		if (findAccount(ano) != null) { //일치하는 계좌가 있다면
 			BankAccount account = findAccount(ano);
-			//예금 = 잔고 - 입금액
-			account.setBalance(account.getBalance() - amount);
-			if(account.getBalance() >0) {
-			System.out.println("정상 출금 되었습니다. 현재잔액 : " + account.getBalance() );
-			}else {
-			System.out.println("잔액이 부족합니다. 다시 입력하세요");	
+			while(true) {
+				System.out.print("출금액: ");
+				int amount = Integer.parseInt(scan.nextLine());
+				
+				if(amount > account.getBalance()) {
+					System.out.println("잔액이 부족합니다. 다시 입력하세요");
+					
+				}else {
+					//출금 = 잔고 - 입금액
+					account.setBalance(account.getBalance() - amount);
+					System.out.println("정상 출금 되었습니다. 현재잔액 : " + account.getBalance() );
+					break;
+				}
 			}
 		}else {
 			System.out.println("계좌가 없습니다." );
