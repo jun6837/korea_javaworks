@@ -11,6 +11,19 @@ public interface RemoteControl {
 	public void turnOff();
 	public void setVolume(int volume);
 	
+	// 정적 메서드
+	static void changeBattery() {
+		System.out.println("건전지를 교환합니다.");
+	}
 	
+	// Default 메서드 - 실제 메서드에 default 키워들르 붙힘
+	default void setMute(boolean mute) {
+		if (mute) { //mute == true
+			System.out.println("무음 처리합니다.");
+		}
+		else {
+			System.out.println("무음 해제합니다.");
+		}
+	}
 	
 }
