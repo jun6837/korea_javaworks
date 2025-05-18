@@ -6,6 +6,7 @@ public class StackTest {
 
 	public static void main(String[] args) {
 		// Stack 자료형 사용
+		// LIFO(Last In First Out)
 		Stack<Coin> coinBox = new Stack<>();
 		
 		Coin coin500 = new Coin(500);
@@ -17,7 +18,7 @@ public class StackTest {
 		coinBox.push(coin100);
 		coinBox.push(coin50);
 		
-		//스택에서 동전 꺼내기 (나중에 들어간 것이 먼저 나옴)
+		//스택에서 동전 꺼내기 (나중에 들어간 것이 먼저 나옴)-pop()
 			
 //		System.out.println(coinBox.pop().getValue());
 //		System.out.println(coinBox.pop().getValue());
