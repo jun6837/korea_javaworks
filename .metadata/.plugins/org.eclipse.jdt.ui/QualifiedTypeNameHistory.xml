@@ -31,19 +31,14 @@
     <fullyQualifiedTypeName name="generic.box2.Box"/>
     <fullyQualifiedTypeName name="generic.box.Car"/>
     <fullyQualifiedTypeName name="javax.print.DocFlavor.STRING"/>
-    <fullyQualifiedTypeName name="member.Member"/>
     <fullyQualifiedTypeName name="member.MemberArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="collection.stack.MyStack"/>
     <fullyQualifiedTypeName name="collection.queue.MyQueue"/>
     <fullyQualifiedTypeName name="jdk.internal.classfile.impl.ClassHierarchyImpl.StaticClassHierarchyResolver"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="bankapp.BankAccount"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="interfaces.inheritance.Y"/>
     <fullyQualifiedTypeName name="interfaces.inheritance.MyInterface"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -51,4 +46,13 @@
     <fullyQualifiedTypeName name="interfaces.bookshelf.Queue"/>
     <fullyQualifiedTypeName name="interfaces.innerintetface.Button.OnClickListener"/>
     <fullyQualifiedTypeName name="interfaces.innerintetface.CallListener"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="member.Member"/>
+    <fullyQualifiedTypeName name="list.Shape"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="enums.Season"/>
 </qualifiedTypeNameHistroy>
