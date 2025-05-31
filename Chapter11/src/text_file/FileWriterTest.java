@@ -1,4 +1,4 @@
-package writer_read;
+package text_file;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,8 +15,7 @@ public class FileWriterTest {
 			writer.write('b');
 			
 			//아스키 코드값
-			writer.write(49);
-			
+			writer.write(49); //정수 1
 			//배열을 사용하여 문자 쓰기
 			char[] arr = {'C','D','E'};
 			writer.write(arr);
@@ -31,6 +30,7 @@ public class FileWriterTest {
 			
 			writer.flush(); // 버퍼의 데이터 강제 쓰기(출력)
 			writer.close(); // 파일 닫기
+			System.out.println("쓰기 완료!");			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
