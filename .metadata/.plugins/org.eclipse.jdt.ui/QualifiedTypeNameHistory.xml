@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="abstract_class.game_level.AdvancedLevel"/>
-    <fullyQualifiedTypeName name="abstract_class.game_level.PlayerLevel"/>
-    <fullyQualifiedTypeName name="abstract_class.game_level.SuperLevel"/>
-    <fullyQualifiedTypeName name="interfaces.scheduler.Scheduler"/>
-    <fullyQualifiedTypeName name="interfaces.scheduler.RoundRobin"/>
-    <fullyQualifiedTypeName name="interfaces.scheduler.LeastJob"/>
-    <fullyQualifiedTypeName name="interfaces.scheduler.PriorityAllocation"/>
-    <fullyQualifiedTypeName name="generic.box.Box"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="generic.box2.Box"/>
-    <fullyQualifiedTypeName name="generic.box.Car"/>
-    <fullyQualifiedTypeName name="javax.print.DocFlavor.STRING"/>
-    <fullyQualifiedTypeName name="member.MemberArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="collection.stack.MyStack"/>
@@ -22,7 +9,6 @@
     <fullyQualifiedTypeName name="bankapp.BankAccount"/>
     <fullyQualifiedTypeName name="interfaces.inheritance.Y"/>
     <fullyQualifiedTypeName name="interfaces.inheritance.MyInterface"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="interfaces.bookshelf.Shelf"/>
     <fullyQualifiedTypeName name="interfaces.bookshelf.Queue"/>
     <fullyQualifiedTypeName name="interfaces.innerintetface.Button.OnClickListener"/>
@@ -34,7 +20,6 @@
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="enums.Season"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.sun.tools.classfile.StackMap_attribute.stack_map_frame"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -46,7 +31,6 @@
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
     <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="buffered_reader.WriteExample"/>
     <fullyQualifiedTypeName name="java.io.Writer"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
@@ -54,10 +38,26 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="com.sun.jndi.ldap.Connection"/>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput"/>
+    <fullyQualifiedTypeName name="users.domain.UsersDAO"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="users.domain.Users"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.RETURN"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="banking.domain.BankAccountDAO"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="banking.domain.BankAccount"/>
 </qualifiedTypeNameHistroy>

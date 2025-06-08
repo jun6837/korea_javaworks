@@ -36,7 +36,7 @@ public class UsersDAO {
 		try(Connection conn = DriverManager.getConnection(url,username, password);
 				PreparedStatement pstmt = conn.prepareStatement(sql)){
 				pstmt.setString(1,users.getuserId());  
-				pstmt.setString(2,users.getUserPasdword());
+				pstmt.setString(2,users.getuserPassword());
 				pstmt.setString(3,users.getUserName());
 				pstmt.setInt(4,users.getUserAge());
 				
@@ -60,7 +60,7 @@ public class UsersDAO {
 				while(rs.next()) { //검색된 자료가 있는 동안 계속
 					Users user = new Users();
 					user.setuserId(rs.getString("userid")); //DB 에서 검색한 칼럼값
-					user.setUserPasdword(rs.getString("userpassword"));
+					user.setuserPassword(rs.getString("userpassword"));
 					user.setUserName(rs.getString("username"));
 					user.setUserAge(rs.getInt("userage"));
 					
@@ -71,4 +71,59 @@ public class UsersDAO {
 		}	
 		return userList;
 	}
+	//회원 상세 보기(1건 보기)
+	public	Users getUsers(String userId) {
+		String sql = "SELECT * FROM users WHERE userid =?";
+		Users user = new Users();
+		try(Connection conn = DriverManager.getConnection(url,username, password);
+				PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, userId);
+			try(ResultSet rs = pstmt.executeQuery()){
+				if(rs.next()) {
+					user.setuserId(rs.getString("userid"));
+					user.setuserPassword(rs.getString("userpassword"));
+					user.setUserName(rs.getString("username"));
+					user.setUserAge(rs.getInt("userage"));
+					
+				}
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+	//회원 수정
+	public void updateUser(Users user) {
+		String sql = "UPDATE users SET userpassword = ?, username = ? , userage = ?"
+				+ "WHERE userid = ?";
+		try(Connection conn = DriverManager.getConnection(url, username, password);
+				PreparedStatement pstmt = conn.prepareStatement(sql)){
+				pstmt.setString(1,user.getuserPassword());
+				pstmt.setString(2,user.getUserName());
+				pstmt.setInt(3,user.getUserAge());
+				pstmt.setString(4,user.getuserId());
+				
+				pstmt.execute();			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	//회원 삭제
+		public void deleteUser(String userId) {
+			String sql = "DELETE FROM users WHERE userId = ?";
+			try(Connection conn = DriverManager.getConnection(url, username, password);
+					PreparedStatement pstmt = conn.prepareStatement(sql)){
+					pstmt.setString(1, userId);
+					pstmt.execute();			
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
+		
+		}
+	
+	
+	
+	
+	
 }

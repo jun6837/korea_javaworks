@@ -2,7 +2,7 @@ package users.domain;
 
 public class Users {
 	private String userId;
-	private String userPasdword;
+	private String userPassword;
 	private String userName;
 	private int userAge;
 	
@@ -17,13 +17,13 @@ public class Users {
 	}
 
 
-	public String getUserPasdword() {
-		return userPasdword;
+	public String getuserPassword() {
+		return userPassword;
 	}
 
 
-	public void setUserPasdword(String userPasdword) {
-		this.userPasdword = userPasdword;
+	public void setuserPassword(String userPassword) {
+		this.userPassword = userPassword;
 	}
 
 
@@ -48,7 +48,7 @@ public class Users {
 
 	@Override
 	public String toString() {
-		return "Users [userId=" + userId + ", userPasdword=" + userPasdword + ", userName=" + userName + ", userAge="
+		return "Users [userId=" + userId + ", userPassword=" + userPassword + ", userName=" + userName + ", userAge="
 				+ userAge + "]";
 	}
 	
