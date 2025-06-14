@@ -1,0 +1,19 @@
+package streams.student;
+
+public class Student {
+	private String name;
+	private int score;
+
+	public Student(String name, int score) {
+		this.name  = name;
+		this.score = score;
+	}
+	public String getNmae() {
+		return name;
+
+	}
+	public int	getScore() {
+		return score;
+
+	}
+}
